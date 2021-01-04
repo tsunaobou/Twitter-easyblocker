@@ -40,8 +40,8 @@ if res.status_code == 200:
         if res2.status_code == 200:
             print("ID:%dのユーザーをブロックしました"%ready_blockid)
         else:
-            print("Failed:%d" % res2.status_code)
+            print("ステータスコード%dで失敗しました。" % res2.status_code)
 
 
 else:
-    print("Failed: %d" %res.status_code)
+    print("ステータスコード%dで失敗しました。" %res.status_code)
